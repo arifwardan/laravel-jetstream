@@ -1,3 +1,7 @@
 <div>
-    {{-- The Master doesn't talk, he acts. --}}
+    <ul>
+        @foreach ($data as $contact)
+            <li>{{ $contact->name }}</li>
+        @endforeach
+    </ul>
 </div>
